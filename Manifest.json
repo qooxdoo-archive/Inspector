@@ -1,21 +1,25 @@
 {
-  "info" : 
+  "info" :
   {
     "name" : "inspector",
 
     "summary" : "A runtime code inspection module",
     "description" : "The qooxdoo inspector is a tool designed to help debugging qooxdoo applications.  It consists of four seperate windows, (1) a javascript shell; (2) the object finder which shows a table of all qooxdoo objects; (3) the widget finder which shows a tree structure of the ui; (4) the property editor which shows all properties of the current selected object.",
-    
-    "homepage" : "http://qooxdoo.org/",
+
+    "category": ["tool"],
+
+    "download" : "https://github.com/qooxdoo/Inspector/archive/master.zip",
+
+    "homepage" : "https://github.com/qooxdoo/Inspector",
 
     "license" : "LGPL/EPL",
-    "authors" : 
+    "authors" :
     [
       {
         "name" : "Martin Wittemann (martinwittemann)",
         "email" : "martin DOT wittemann AT 1und1 DOT de"
       },
-      
+
       {
         "name" : "Christian Hagendorn (chris_schmidt)",
         "email" : "christian DOT hagendorn AT 1und1 DOT de"
@@ -23,10 +27,10 @@
     ],
 
     "version" : "trunk",
-    "qooxdoo-versions": ["trunk"]
+    "qooxdoo-versions": ["trunk", "4.1", "4.0.2"]
   },
-  
-  "provides" : 
+
+  "provides" :
   {
     "namespace"   : "inspector",
     "encoding"    : "utf-8",

@@ -4,7 +4,7 @@
   "let" :
   {
     "APPLICATION"  : "inspector",
-    "QOOXDOO_PATH" : "../..",
+    "QOOXDOO_PATH" : "../qooxdoo",
     "CACHE"        : "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
     "THEME"        : "inspector.theme.Theme",
     "ICONTHEME"    : ["Tango"],
