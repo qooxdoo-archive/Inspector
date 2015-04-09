@@ -10,7 +10,14 @@
 
     "download" : "https://github.com/qooxdoo/Inspector/archive/master.zip",
 
-    "homepage" : "https://github.com/qooxdoo/Inspector",
+    "homepage" : "https://github.com/qooxdoo/Inspector/",
+
+    "demos": [
+      {
+        "name": "default",
+        "url": "http://qooxdoo.github.io/Inspector/"
+      }
+    ],
 
     "license" : "LGPL/EPL",
     "authors" :

@@ -106,17 +106,13 @@ qx.Class.define("inspector.Application",
 
       var startUrl = "..";
       var cookieUrl = qx.bom.Cookie.get("url");
-      if (cookieUrl == undefined || cookieUrl == "") {
-        cookieUrl = startUrl;
-      }
-
-      if (window.qxinspector != undefined && qxinspector.local)
-      {
-        this._toolbar.getTextField().setVisibility("hidden");
-        startUrl = "index.html";
-      }
-      else {
+      if (cookieUrl) {
         startUrl = cookieUrl;
+      } else {
+        var uriParam = location.search.split('inspect=');
+        if (uriParam.length > 1) {
+          startUrl = uriParam[1];
+        }
       }
 
       // create the iFrame

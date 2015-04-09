@@ -1,5 +1,4 @@
-Inspector
-=========
+# <a href="http://qooxdoo.github.io/Inspector/?inspect=http://10.21.8.78/workspace/Inspector/source/?inspect=http%3A%2F%2Fqooxdoo.github.io%2FFeatureConfigEditor%2F%3Fria">Inspector</a>
 
 qooxdoo Inspector is a powerful development tool perfectly suited for *live* debugging and modifying qooxdoo applications.
 
