@@ -105,13 +105,13 @@ qx.Class.define("inspector.Application",
       this.__setEnabledToolbar(false);
 
       var startUrl = "..";
-      var cookieUrl = qx.bom.Cookie.get("url");
-      if (cookieUrl) {
-        startUrl = cookieUrl;
+      var uriParam = location.search.split('inspect=');
+      if (uriParam.length > 1) {
+        startUrl = decodeURIComponent(uriParam[1]);
       } else {
-        var uriParam = location.search.split('inspect=');
-        if (uriParam.length > 1) {
-          startUrl = uriParam[1];
+        var cookieUrl = qx.bom.Cookie.get("url");
+        if (cookieUrl) {
+          startUrl = cookieUrl;
         }
       }
 
