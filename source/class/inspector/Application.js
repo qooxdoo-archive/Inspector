@@ -104,7 +104,7 @@ qx.Class.define("inspector.Application",
       this.__createToolbar();
       this.__setEnabledToolbar(false);
 
-      var startUrl = "..";
+      var startUrl = "http://qooxdoo.github.io/FeatureConfigEditor/?ria";
       var uriParam = location.search.split('inspect=');
       if (uriParam.length > 1) {
         startUrl = decodeURIComponent(uriParam[1]);
